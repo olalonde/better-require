@@ -1,10 +1,19 @@
-Adds file formats supported by require(). Will always return a JSON representation.
+Augments require() with support for multiple file formats.
 
 Supported file types are: `json`, `yaml`, `csv`, `xml`, `ini`.
 
 # Install
 
     npm install better-require
+
+# Usage
+
+```javascript
+/**
+ * @param {String} formats is a white space separated list of formats you would like require() to support.
+ */
+require('better-require')(formats);
+```
 
 # Example 
 
