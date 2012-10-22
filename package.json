@@ -19,6 +19,7 @@
   "dependencies": {
     "require-json": "",
     "require-yaml": "",
-    "require-csv": ""
+    "require-csv": "",
+    "require-xml": ""
   }
 }

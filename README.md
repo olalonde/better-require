@@ -1,6 +1,6 @@
 Adds file formats to require(). 
 
-Supported file types are: `json`, `yaml`, `csv`.
+Supported file types are: `json`, `yaml`, `csv`, `xml`.
 
 # Install
 
@@ -21,6 +21,7 @@ console.log(configYaml);
 - [require-json](https://github.com/olalonde/require-json)
 - [require-yaml](https://github.com/olalonde/require-yaml)
 - [require-csv](https://github.com/olalonde/require-csv)
+- [require-xml](https://github.com/olalonde/require-xml)
 
 # Reference
 
