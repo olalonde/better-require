@@ -1,5 +1,4 @@
-`require('better-require')('json yaml')` lets you load JSON and YAML files
-using require syntax. For example: `var config = require('./config.json');` 
+Adds file formats to require(). 
 
 Supported file types are: `json`, `yaml`, `csv`.
 
@@ -21,6 +20,7 @@ console.log(configYaml);
 
 - [require-json](https://github.com/olalonde/require-json)
 - [require-yaml](https://github.com/olalonde/require-yaml)
+- [require-csv](https://github.com/olalonde/require-csv)
 
 # Reference
 
