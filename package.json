@@ -1,0 +1,23 @@
+{
+  "name": "better-require",
+  "version": "0.0.1",
+  "description": "require('better-require')('json yaml') lets you load JSON and YAML files using require syntax. For example: var config = require('./config.json'); Extensions available are: json, yaml.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:olalonde/better-require.git"
+  },
+  "keywords": [
+    "require",
+    "json"
+  ],
+  "author": "Olivier Lalonde <olalonde@gmail.com>",
+  "license": "BSD",
+  "dependencies": {
+    "require-json": "",
+    "require-yaml": ""
+  }
+}
