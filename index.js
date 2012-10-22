@@ -5,6 +5,7 @@ var supportedExtensions = {
   , 'yaml': 'require-yaml'
   , 'csv': 'require-csv'
   , 'xml': 'require-xml'
+  , 'ini': 'require-ini'
 };
 
 module.exports = function (extensions) {
