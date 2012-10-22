@@ -3,6 +3,7 @@
 var supportedExtensions = {
   'json': 'require-json' 
   , 'yaml': 'require-yaml'
+  , 'csv': 'require-csv'
 };
 
 module.exports = function (extensions) {

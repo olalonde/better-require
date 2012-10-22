@@ -1,7 +1,7 @@
 `require('better-require')('json yaml')` lets you load JSON and YAML files
 using require syntax. For example: `var config = require('./config.json');` 
 
-Extensions available are: json, yaml.
+Supported file types are: `json`, `yaml`, `csv`.
 
 # Install
 
@@ -9,8 +9,13 @@ Extensions available are: json, yaml.
 
 # Example 
 
-    require('better-require')('json yaml');
-    var config = require('./config.json');
+```javascript
+require('better-require')('json yaml');
+var config = require('./config.json');
+var configYaml = require('./config.yaml');
+console.log(config);
+console.log(configYaml);
+```
 
 # Dependencies
 

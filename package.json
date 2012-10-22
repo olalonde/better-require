@@ -18,6 +18,7 @@
   "license": "BSD",
   "dependencies": {
     "require-json": "",
-    "require-yaml": ""
+    "require-yaml": "",
+    "require-csv": ""
   }
 }
