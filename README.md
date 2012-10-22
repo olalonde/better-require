@@ -2,6 +2,8 @@ Augments require() with support for multiple file formats.
 
 Supported file types are: `json`, `yaml`, `csv`, `xml`, `ini`.
 
+Behind the scenes, this module adds handlers to [require.extensions](http://nodejs.org/api/all.html#all_require_extensions).
+
 # Install
 
     npm install better-require
