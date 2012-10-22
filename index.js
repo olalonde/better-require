@@ -4,6 +4,7 @@ var supportedExtensions = {
   'json': 'require-json' 
   , 'yaml': 'require-yaml'
   , 'csv': 'require-csv'
+  , 'xml': 'require-xml'
 };
 
 module.exports = function (extensions) {
