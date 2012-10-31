@@ -21,6 +21,7 @@
     "require-yaml": "",
     "require-csv": "",
     "require-xml": "",
-    "require-ini": ""
+    "require-ini": "",
+    "coffee-script": ""
   }
 }

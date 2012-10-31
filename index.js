@@ -6,6 +6,8 @@ var supportedExtensions = {
   , 'csv': 'require-csv'
   , 'xml': 'require-xml'
   , 'ini': 'require-ini'
+  , 'coffee-script': 'coffee-script'
+  , 'coffeescript': 'coffee-script'
 };
 
 module.exports = function (extensions) {
