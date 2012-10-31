@@ -9,6 +9,7 @@ var supportedExtensions = {
 };
 
 module.exports = function (extensions) {
+  extensions = extensions || Object.keys(supportedExtensions);
   if (!(extensions instanceof Array)) {
     extensions = extensions.split(/ +/);
   }

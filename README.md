@@ -12,8 +12,11 @@ Behind the scenes, this module adds handlers to [require.extensions](http://node
 
 ```javascript
 /**
- * @param {String} formats is a white space separated list of formats you would like require() to support.
+ * @param {String} optional - formats is a white space separated list of formats you would like require() to support.
  */
+// support all available extensions
+require('better-require')();
+// support a subset of extensions
 require('better-require')(formats);
 ```
 
