@@ -27,5 +27,6 @@
   },
   "devDependencies": {
     "clojure-script": ""
+    , "Frog": ""
   }
 }

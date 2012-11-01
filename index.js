@@ -1,3 +1,5 @@
+var path = require('path'),
+  util = require('util');
 // @see http://nodejs.org/api/all.html#all_require_extensions
 
 // first value of `extensions` property should be an extension the require registers
@@ -32,6 +34,14 @@ var supportedFormats = {
     , aliases: 'clojure-script'
     , extensions: 'cljs'
     , bundled: false
+    , url: 'https://github.com/michaelsbradleyjr/node-clojurescript'
+  }
+  , 'dart': {
+    require: 'Frog'
+    , extensions: 'dart'
+    , bundled: false
+    , install: 'You will also need to install the Dart SDK http://www.dartlang.org/docs/getting-started/sdk/#download.'
+    , url: 'https://github.com/kaisellgren/Frog/'
   }
 };
 
@@ -61,6 +71,16 @@ module.exports = function (formats) {
       supportedFormat.aliases = [supportedFormat.aliases];
     // add extensions to aliases
     supportedFormat.aliases = supportedFormat.aliases.concat(supportedFormat.extensions);
+    // ## Populate install
+    var install = supportedFormat.install || '';
+
+    supportedFormat.install = supportedFormat.name
+      + ' depends on a heavy package and better-require does not install it by default.'
+      + '\n\n'
+      + 'You will need to `npm install ' + supportedFormat.require  + '` before you can require `%s`'
+      + '\n\n'
+      + (install ? install + '\n\n' : '')
+      + (supportedFormat.url ? 'Detailed install information available at ' + supportedFormat.url + '\n\n' : '');
   }
 
   for (var key in supportedFormats) {
@@ -81,9 +101,7 @@ function requireFormat (format) {
     format.extensions.forEach(function (extension) {
       console.log(extension);
       require.extensions['.' + extension] = function(module, filename) {
-        var err = new Error(format.require + ' is quite a heavy package and better-require does not install it by default.'
-                       + '\n'
-                       + 'You will need to `npm install ' + format.require  + '` before you can require ' + filename + '.');
+        var err = new Error(util.format(format.install, path.basename(filename)));
         throw err;
       };
     });

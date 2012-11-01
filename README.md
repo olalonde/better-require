@@ -15,6 +15,7 @@ Augments require() with support for multiple file formats.
 - [coffeescript](http://coffeescript.org) (.coffeescript, .coffee)
 - [six](https://github.com/matthewrobb/six)
 - [clojuresript](https://github.com/clojure/clojurescript) (.cljs)
+- [dart](http://www.dartlang.org/)
 
 Behind the scenes, this module adds handlers to [require.extensions](http://nodejs.org/api/all.html#all_require_extensions).
 
@@ -60,6 +61,7 @@ console.log(config);
 - [require-csv](https://github.com/olalonde/require-csv)
 - [require-xml](https://github.com/olalonde/require-xml)
 - [require-ini](https://github.com/olalonde/require-ini)
+- see package.json
 
 # Reference
 
