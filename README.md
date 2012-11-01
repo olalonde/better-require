@@ -5,15 +5,16 @@ Augments require() with support for multiple file formats.
 **... which return a JSON represenation:**
 
 - [json](http://en.wikipedia.org/wiki/JSON)
-- [yaml](http://en.wikipedia.org/wiki/Yaml)
-- [csv](http://en.wikipedia.org/wiki/Comma-separated_values)
+- [yaml](http://en.wikipedia.org/wiki/Yaml) (.yaml, .yml)
+- [csv](http://en.wikipedia.org/wiki/Comma-separated_values) 
 - [xml](http://en.wikipedia.org/wiki/Xml)
 - [ini](http://en.wikipedia.org/wiki/INI_file)
 
 **... which return a Javascript module:**
 
-- [coffeescript](http://coffeescript.org)
+- [coffeescript](http://coffeescript.org) (.coffeescript, .coffee)
 - [six](https://github.com/matthewrobb/six)
+- [clojuresript](https://github.com/clojure/clojurescript) (.cljs)
 
 Behind the scenes, this module adds handlers to [require.extensions](http://nodejs.org/api/all.html#all_require_extensions).
 

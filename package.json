@@ -24,5 +24,8 @@
     "require-ini": "",
     "coffee-script": "",
     "six": ""
+  },
+  "devDependencies": {
+    "clojure-script": ""
   }
 }
