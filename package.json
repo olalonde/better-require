@@ -22,6 +22,7 @@
     "require-csv": "",
     "require-xml": "",
     "require-ini": "",
-    "coffee-script": ""
+    "coffee-script": "",
+    "six": ""
   }
 }

@@ -8,6 +8,7 @@ var supportedExtensions = {
   , 'ini': 'require-ini'
   , 'coffee-script': 'coffee-script'
   , 'coffeescript': 'coffee-script'
+  , 'six': 'six'
 };
 
 module.exports = function (extensions) {

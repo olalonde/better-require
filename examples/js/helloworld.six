@@ -1,0 +1,7 @@
+class Person {
+  constructor() {
+    console.log('Hello world');
+  }
+}
+
+var p = new Person();
