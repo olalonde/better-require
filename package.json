@@ -17,6 +17,7 @@
   "author": "Olivier Lalonde <olalonde@gmail.com>",
   "license": "BSD",
   "dependencies": {
+    "colors": "",
     "require-json": "",
     "require-yaml": "",
     "require-csv": "",

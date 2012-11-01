@@ -1,5 +1,6 @@
 var path = require('path'),
   util = require('util');
+require('colors');
 // @see http://nodejs.org/api/all.html#all_require_extensions
 
 // first value of `extensions` property should be an extension the require registers
@@ -74,13 +75,18 @@ module.exports = function (formats) {
     // ## Populate install
     var install = supportedFormat.install || '';
 
-    supportedFormat.install = supportedFormat.name
-      + ' depends on a heavy package and better-require does not install it by default.'
+    supportedFormat.install = function (filename) {
+      var filename = path.basename(filename);
+      return supportedFormat.name
+      + ' depends on a heavy package and better-require does not install it by default. '
+      + 'You need to install it by yourself before you can require ' + filename.grey + ':'
       + '\n\n'
-      + 'You will need to `npm install ' + supportedFormat.require  + '` before you can require `%s`'
+      + ('npm install ' + supportedFormat.require  + '').blue
       + '\n\n'
-      + (install ? install + '\n\n' : '')
-      + (supportedFormat.url ? 'Detailed install information available at ' + supportedFormat.url + '\n\n' : '');
+      + (install ? install + ' ' : '')
+      + (supportedFormat.url ? 'More install information at ' + supportedFormat.url : '')
+      + '\n\n';
+    }
   }
 
   for (var key in supportedFormats) {
@@ -101,7 +107,7 @@ function requireFormat (format) {
     format.extensions.forEach(function (extension) {
       console.log(extension);
       require.extensions['.' + extension] = function(module, filename) {
-        var err = new Error(util.format(format.install, path.basename(filename)));
+        var err = new Error(format.install(filename));
         throw err;
       };
     });
