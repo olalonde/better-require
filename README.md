@@ -1,12 +1,19 @@
 Augments require() with support for multiple file formats.
 
-**Supported file formats (which return a JSON object)** 
+# Supported file formats
+ 
+**... which return a JSON represenation:**
 
-`json`, `yaml`, `csv`, `xml`, `ini`.
+- [json](http://en.wikipedia.org/wiki/JSON)
+- [yaml](http://en.wikipedia.org/wiki/Yaml)
+- [csv](http://en.wikipedia.org/wiki/Comma-separated_values)
+- [xml](http://en.wikipedia.org/wiki/Xml)
+- [ini](http://en.wikipedia.org/wiki/INI_file)
 
-**Supported file formats (which return a Javascript object):** 
+**... which return a Javascript module:**
 
-`coffeescript`, `six`.
+- [coffeescript](http://coffeescript.org)
+- [six](https://github.com/matthewrobb/six)
 
 Behind the scenes, this module adds handlers to [require.extensions](http://nodejs.org/api/all.html#all_require_extensions).
 
