@@ -29,5 +29,6 @@
   "devDependencies": {
     "clojure-script": ""
     , "Frog": ""
+    , "require-typescript": ""
   }
 }

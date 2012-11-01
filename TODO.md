@@ -1,5 +1,4 @@
-Do require-haml, require-ini, etc. with same interface. Finally, write wrapper package "require" that lets you pass the list of file extensions you want to enable.
+If no extension, try catch to require as a JS file, otherwise try to
+detect file type.
 
-For example:
-
-require('require')('json haml ini');
+Load any library with node-ffi?

@@ -44,6 +44,10 @@ var supportedFormats = {
     , install: 'You will also need to install the Dart SDK http://www.dartlang.org/docs/getting-started/sdk/#download.'
     , url: 'https://github.com/kaisellgren/Frog/'
   }
+  , 'typescript': {
+    require: 'require-typescript'
+    , extensions: ['ts']
+  }
 };
 
 module.exports = function (formats) {
