@@ -18,6 +18,12 @@ Augments require() with support for multiple file formats.
 - [dart](http://www.dartlang.org/) - not bundled
 - [typescript](http://www.typescriptlang.org/) (.ts) - not bundled
 
+**... work in progress:**
+
+- dynamic libraries
+- ruby
+- python
+
 Behind the scenes, this module adds handlers to [require.extensions](http://nodejs.org/api/all.html#all_require_extensions).
 
 # Install
