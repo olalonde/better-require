@@ -44,14 +44,16 @@ require('better-require')(formats);
 
 # Example 
 
+Enable support for all file types:
+
 ```javascript
-require('better-require')('json');
+require('better-require')();
 
 var config = require('./config.json');
 console.log(config);
 ```
 
-Enable support for mutliple file types:
+Enable support for only a subset of file types:
 
 ```javascript
 require('better-require')('json yaml xml');
