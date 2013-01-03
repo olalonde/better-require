@@ -2,7 +2,7 @@ Augments require() with support for multiple file formats.
 
 # Supported file formats
  
-**... which return a JSON represenation:**
+**... which return a JSON representation:**
 
 - [json](http://en.wikipedia.org/wiki/JSON)
 - [yaml](http://en.wikipedia.org/wiki/Yaml) (.yaml, .yml)
