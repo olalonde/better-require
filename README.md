@@ -1,3 +1,5 @@
+[![NPM version](https://badge.fury.io/js/better-require.png)](http://badge.fury.io/js/better-require)
+
 Augments require() with support for multiple file formats.
 
 # Supported file formats
