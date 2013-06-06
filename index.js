@@ -109,7 +109,6 @@ function requireFormat (format) {
   }
   catch (e) {
     format.extensions.forEach(function (extension) {
-      console.log(extension);
       require.extensions['.' + extension] = function(module, filename) {
         var err = new Error(format.install(filename));
         throw err;
