@@ -30,6 +30,7 @@ var supportedFormats = {
   , 'livescript': {
     require: 'LiveScript'
     , extensions: ['ls']
+    , aliases: ['LiveScript']
     }
   , 'six': {
     require: 'six'
@@ -63,7 +64,6 @@ module.exports = function (formats) {
 
   // # Format supportedFormats
   for (var key in supportedFormats) {
-    console.log('key in ?: line68: ', key);
     var supportedFormat = supportedFormats[key];
     supportedFormat.name = supportedFormat.name || key;
     // ## Populate .extensions
