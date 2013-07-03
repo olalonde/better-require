@@ -4,7 +4,7 @@ Augments require() with support for multiple file formats.
 
 # Supported file formats
  
-**... which return a JSON representation:**
+**... which return a JSON object:**
 
 - [json](http://en.wikipedia.org/wiki/JSON)
 - [yaml](http://en.wikipedia.org/wiki/Yaml) (.yaml, .yml)
@@ -20,6 +20,7 @@ Augments require() with support for multiple file formats.
 - [clojurescript](https://github.com/clojure/clojurescript) (.cljs) - not bundled
 - [dart](http://www.dartlang.org/) - not bundled
 - [typescript](http://www.typescriptlang.org/) (.ts) - not bundled
+
 **... work in progress:**
 
 - dynamic libraries
