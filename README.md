@@ -15,11 +15,11 @@ Augments require() with support for multiple file formats.
 **... which return a Javascript module:**
 
 - [coffeescript](http://coffeescript.org) (.coffeescript, .coffee)
+- [livescript](http://livescript.net/) (.ls)
 - [six](https://github.com/matthewrobb/six)
 - [clojurescript](https://github.com/clojure/clojurescript) (.cljs) - not bundled
 - [dart](http://www.dartlang.org/) - not bundled
 - [typescript](http://www.typescriptlang.org/) (.ts) - not bundled
-
 **... work in progress:**
 
 - dynamic libraries

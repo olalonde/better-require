@@ -27,7 +27,8 @@
     "clojure",
     "dart",
     "typescript",
-    "ts"
+    "ts",
+    "LiveScript"
   ],
   "author": "Olivier Lalonde <olalonde@gmail.com>",
   "license": "BSD",
@@ -39,7 +40,8 @@
     "require-xml": "",
     "require-ini": "",
     "coffee-script": "",
-    "six": ""
+    "six": "",
+    "LiveScript": ""
   },
   "devDependencies": {
     "clojure-script": ""
