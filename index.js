@@ -27,6 +27,11 @@ var supportedFormats = {
     , extensions: ['coffee']
     , aliases: ['coffee-script']
   }
+  , 'livescript': {
+    require: 'LiveScript'
+    , extensions: ['ls']
+    , aliases: ['LiveScript', 'live-script']
+    }
   , 'six': {
     require: 'six'
   }
