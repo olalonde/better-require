@@ -27,6 +27,10 @@ var supportedFormats = {
     , extensions: ['coffee']
     , aliases: ['coffee-script']
   }
+  , 'livescript': {
+    require: 'LiveScript'
+    , extensions: ['ls']
+    }
   , 'six': {
     require: 'six'
   }
@@ -59,6 +63,7 @@ module.exports = function (formats) {
 
   // # Format supportedFormats
   for (var key in supportedFormats) {
+    console.log('key in ?: line68: ', key);
     var supportedFormat = supportedFormats[key];
     supportedFormat.name = supportedFormat.name || key;
     // ## Populate .extensions
