@@ -30,7 +30,7 @@ var supportedFormats = {
   , 'livescript': {
     require: 'LiveScript'
     , extensions: ['ls']
-    , aliases: ['LiveScript']
+    , aliases: ['LiveScript', 'live-script']
     }
   , 'six': {
     require: 'six'

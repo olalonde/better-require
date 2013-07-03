@@ -19,7 +19,7 @@ Augments require() with support for multiple file formats.
 - [clojurescript](https://github.com/clojure/clojurescript) (.cljs) - not bundled
 - [dart](http://www.dartlang.org/) - not bundled
 - [typescript](http://www.typescriptlang.org/) (.ts) - not bundled
-
+- [livescript](http://livescript.net/) (.ls)
 **... work in progress:**
 
 - dynamic libraries
