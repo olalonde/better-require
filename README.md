@@ -1,5 +1,7 @@
 [![NPM version](https://badge.fury.io/js/better-require.png)](http://badge.fury.io/js/better-require)
 
+** LOOKING FOR MAINTAINER: I don't have time to maintain this module at the moment and would like to let someone to takeover. Let me know in the issues if you're interested! **
+
 Augments require() with support for multiple file formats.
 
 # Supported file formats
